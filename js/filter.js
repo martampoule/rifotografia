@@ -3,8 +3,8 @@ var map;
 
 function init() {
     var mapOptions = {
-        center: new google.maps.LatLng(45.739516776551206, 9.128760125409679),
-        zoom: 12,
+        center: new google.maps.LatLng(39.905643, 36.148673),
+        zoom: 5,
         zoomControl: true,
         zoomControlOptions: {
             style: google.maps.ZoomControlStyle.LARGE,
@@ -29,18 +29,16 @@ function init() {
             stylers: [{ visibility: "simplified" }]
         }, { featureType: "transit", stylers: [{ visibility: "simplified" }] }, { featureType: "landscape", stylers: [{ visibility: "simplified" }] }, { featureType: "road.highway", stylers: [{ visibility: "off" }] }, { featureType: "road.local", stylers: [{ visibility: "on" }] }, { featureType: "road.highway", elementType: "geometry", stylers: [{ visibility: "on" }] }, { featureType: "water", stylers: [{ color: "#84afa3" }, { lightness: 52 }] }, { stylers: [{ saturation: -77 }] }, { featureType: "road" }],
     }
-    var mapElement = document.getElementById('mappa');
+    var mapElement = document.getElementById('haritam');
     var map = new google.maps.Map(mapElement, mapOptions);
     var locations = [
-        ['Titolo 1', 'Descrizione 1', '0 111 222 33 44', 'info@mydomain.com', 'www.mydomain.com', 45.73361899805512, 9.147188027134858, 'http://www.karayeltasarim.com/Resim/Upload/osmark.png'],
-        ['Titolo 2', 'Descrizione 2', '0 242 344 10 20', 'info@mydomain.com', 'www.mydomain.com', 45.74006671120217, 9.126509811917794, 'http://www.karayeltasarim.com/Resim/Upload/osmark.png'],
-        ['Titolo 2', 'Descrizione 2', '0 242 344 10 20', 'info@mydomain.com', 'www.mydomain.com', 45.74006671120217, 9.226509811917794, 'http://www.karayeltasarim.com/Resim/Upload/osmark.png'],
-
+        ['Location One', 'This is my address.', '0 111 222 33 44', 'info@mydomain.com', 'www.mydomain.com', 36.85915525936127, 30.79201858795159, 'http://www.karayeltasarim.com/Resim/Upload/osmark.png'],
+        ['Location Two', 'This is my address.', '0 242 344 10 20', 'info@mydomain.com', 'www.mydomain.com', 37.009614, 27.257248, 'http://www.karayeltasarim.com/Resim/Upload/osmark.png']
     ];
-    for (i = 0; i < 9; i++) {
+    for (i = 0; i < locations.length; i++) {
         if (locations[i][1] == 'undefined') { description = ''; } else { description = locations[i][1]; }
         if (locations[i][2] == 'undefined') { telephone = ''; } else { telephone = locations[i][2]; }
-        if (locations[i][3] == 'undefined') { id = ''; } else { email = locations[i][3]; }
+        if (locations[i][3] == 'undefined') { email = ''; } else { email = locations[i][3]; }
         if (locations[i][4] == 'undefined') { web = ''; } else { web = locations[i][4]; }
         if (locations[i][7] == 'undefined') { markericon = ''; } else { markericon = locations[i][7]; }
         marker = new google.maps.Marker({
@@ -53,18 +51,12 @@ function init() {
             email: email,
             web: web
         });
-        if (web.substring(0, 8) != "http://") {
+        if (web.substring(0, 7) != "http://") {
             link = "http://" + web;
         } else {
             link = web;
         }
         bindInfoWindow(marker, map, locations[i][0], description, telephone, email, web, link);
-    }
-
-    for (var i = 0; i < 9; i++) {
-        new google.maps.event.addListener(markers[i], 'click', function() {
-            infowindow.open(map, this)
-        });
     }
 
     function bindInfoWindow(marker, map, title, desc, telephone, email, web, link) {
@@ -85,9 +77,10 @@ function init() {
             } else {
                 var html = "<div id='sube' style='color:#000;background-color:transparent;padding:5px;width:200px;'><h4>" + title + "</h4><p>" + desc + "<p><p>" + telephone + "<p><a href='mailto:" + email + "' >" + email + "<a><a href='" + link + "'' >" + web + "<a></div>";
                 iw = new google.maps.InfoWindow({ content: html });
-                iw.open(map, marker);
+                iw.open(map, marker, );
                 infoWindowVisible(true);
             }
+
         });
         google.maps.event.addListener(iw, 'closeclick', function() {
             infoWindowVisible(false);
@@ -100,7 +93,7 @@ function init() {
         });
 
         google.maps.event.addListener(marker, 'click', function() {
-            map.setZoom(15);
+            map.setZoom(8);
             map.setCenter(marker.getPosition());
         });
     }

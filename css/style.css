@@ -45,8 +45,6 @@ h1 {
     border-top: 1px solid #000000 !important;
 }
 
-.evidenziate {}
-
 a:hover {
     color: rgb(156, 21, 21);
 }
@@ -67,8 +65,8 @@ a:hover {
 
 /*-MAPPA-*/
 
-#mappa {
-    height: 600px;
+#haritam {
+    height: 400px;
     width: 100%;
 }
 
