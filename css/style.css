@@ -4,6 +4,7 @@
 
 body {
     margin: 7vh;
+    margin-top: 0 !important;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 248, 241);
     font-family: 'Open Sans', sans-serif;
@@ -14,9 +15,28 @@ nav {
     top: 3vh;
 }
 
+.nav-link {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-link:hover {
+    color: rgb(155, 132, 108);
+    text-decoration: underline;
+}
+
 h1 {
     font-family: 'Playfair Display', serif;
     margin: 2vh;
+}
+
+.logo {
+    height: 50px;
+}
+
+.header {
+    position: relative;
+    margin-top: 3%;
 }
 
 
@@ -45,8 +65,29 @@ h1 {
     border-top: 1px solid #000000 !important;
 }
 
+
+/*-NAV MENU-*/
+
+.menu {
+    margin-top: 2vh;
+}
+
+.ul-menu {
+    padding: 2vh;
+}
+
+ul#menu li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 1vh;
+}
+
 a:hover {
-    color: rgb(156, 21, 21);
+    color: rgb(136, 94, 50);
 }
 
 
