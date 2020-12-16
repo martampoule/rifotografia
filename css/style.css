@@ -38,9 +38,14 @@ h1 {
     border-top: 1px solid #000000 !important;
 }
 
-.evidenziate {
-    background-color: rgb(255, 219, 244);
+.border {
+    border-bottom: 1px solid #000000 !important;
+    border-left: 1px solid #000000 !important;
+    border-right: 1px solid #000000 !important;
+    border-top: 1px solid #000000 !important;
 }
+
+.evidenziate {}
 
 a:hover {
     color: rgb(156, 21, 21);
@@ -57,4 +62,27 @@ a:hover {
 .flex-grid>.col {
     flex: 1 1 30%;
     /*grow | shrink | basis */
+}
+
+
+/*-MAPPA-*/
+
+#mappa {
+    height: 600px;
+    width: 100%;
+}
+
+.gm-style-iw * {
+    display: block;
+    width: 100%;
+}
+
+.gm-style-iw h4,
+.gm-style-iw p {
+    margin: 0;
+    padding: 0;
+}
+
+.gm-style-iw a {
+    color: #4272db;
 }

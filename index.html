@@ -15,9 +15,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,800;1,400&display=swap" rel="stylesheet">
 
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="css/cocoen.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBfkvgO7viPOgYJw24X4INQxZ66f6gU1NE&sensor=false&extension=.js'></script>
 
 </head>
 
@@ -46,6 +48,12 @@
     <nav class="" style="position: relative;">
 
     </nav>
+
+    <section class="border">
+        <div id='mappa'></div>
+    </section>
+
+
 
     <!--POST_________________________________________________________-->
 
@@ -76,7 +84,7 @@
             </div>
 
             <div class="col">
-                <div class="cocoen">
+                <div class="cocoen" id="1">
                     <img src="img/before.jpg" alt="">
                     <img src="img/after.jpg" alt="">
                 </div>
@@ -136,6 +144,7 @@
     <script src="js/cocoen.min.js"></script>
     <script src="js/cocoen-jquery.min.js"></script>
     <script src="js/filter.js"></script>
+
 </body>
 <script>
     $(function() {
