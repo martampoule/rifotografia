@@ -32,9 +32,9 @@ function init() {
     var mapElement = document.getElementById('mappa');
     var map = new google.maps.Map(mapElement, mapOptions);
     var locations = [
-        ['Titolo 1', 'Descrizione 1', '0 111 222 33 44', 'info@mydomain.com', 'www.mydomain.com', 45.73361899805512, 9.147188027134858, 'http://www.karayeltasarim.com/Resim/Upload/osmark.png'],
-        ['Titolo 2', 'Descrizione 2', '0 242 344 10 20', 'info@mydomain.com', 'www.mydomain.com', 45.74006671120217, 9.126509811917794, 'http://www.karayeltasarim.com/Resim/Upload/osmark.png'],
-        ['Titolo 2', 'Descrizione 2', '0 242 344 10 20', 'info@mydomain.com', 'www.mydomain.com', 45.74006671120217, 9.226509811917794, 'http://www.karayeltasarim.com/Resim/Upload/osmark.png'],
+        ['Titolo 1', 'Descrizione 1', '0 111 222 33 44', 'info@mydomain.com', '#1', 45.73361899805512, 9.147188027134858, 'http://www.karayeltasarim.com/Resim/Upload/osmark.png'],
+        ['Titolo 2', 'Descrizione 2', '0 242 344 10 20', 'info@mydomain.com', '#1', 45.74006671120217, 9.126509811917794, 'http://www.karayeltasarim.com/Resim/Upload/osmark.png'],
+        ['Titolo 2', 'Descrizione 2', '0 242 344 10 20', 'info@mydomain.com', '#1', 45.74006671120217, 9.226509811917794, 'http://www.karayeltasarim.com/Resim/Upload/osmark.png'],
 
     ];
     for (i = 0; i < locations.length; i++) {
@@ -54,7 +54,7 @@ function init() {
             web: web
         });
         if (web.substring(0, 8) != "http://") {
-            link = "http://" + web;
+            link = "https://martampoule.github.io/rifotografia/" + web;
         } else {
             link = web;
         }
