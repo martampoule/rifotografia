@@ -37,7 +37,7 @@ function init() {
         ['Titolo 2', 'Descrizione 2', '0 242 344 10 20', 'info@mydomain.com', 'www.mydomain.com', 45.74006671120217, 9.226509811917794, 'http://www.karayeltasarim.com/Resim/Upload/osmark.png'],
 
     ];
-    for (i = 0; i < locations.length; i++) {
+    for (i = 0; i < 9; i++) {
         if (locations[i][1] == 'undefined') { description = ''; } else { description = locations[i][1]; }
         if (locations[i][2] == 'undefined') { telephone = ''; } else { telephone = locations[i][2]; }
         if (locations[i][3] == 'undefined') { id = ''; } else { email = locations[i][3]; }
@@ -59,6 +59,12 @@ function init() {
             link = web;
         }
         bindInfoWindow(marker, map, locations[i][0], description, telephone, email, web, link);
+    }
+
+    for (var i = 0; i < 9; i++) {
+        new google.maps.event.addListener(markers[i], 'click', function() {
+            infowindow.open(map, this)
+        });
     }
 
     function bindInfoWindow(marker, map, title, desc, telephone, email, web, link) {
