@@ -3,40 +3,14 @@
 }
 
 body {
-    margin: 7vh;
     margin-top: 0 !important;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 248, 241);
     font-family: 'Open Sans', sans-serif;
 }
 
-nav {
-    height: 50px;
-    top: 3vh;
-}
-
-.nav-link {
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.nav-link:hover {
-    color: rgb(155, 132, 108);
-    text-decoration: underline;
-}
-
-h1 {
-    font-family: 'Playfair Display', serif;
-    margin: 2vh;
-}
-
-.logo {
-    height: 50px;
-}
-
-.header {
-    position: relative;
-    margin-top: 3%;
+.margin-body {
+    margin: 30px;
 }
 
 
@@ -44,6 +18,7 @@ h1 {
 
 .border-bottom {
     border-bottom: 1px solid #000000 !important;
+    margin: auto;
 }
 
 .border-left {
@@ -65,15 +40,50 @@ h1 {
     border-top: 1px solid #000000 !important;
 }
 
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+.logo {
+    height: 50px;
+}
+
+.header {
+    position: relative;
+    margin-top: 3%;
+}
+
+.description-text {
+    padding-bottom: 20px !important;
+    padding: 0;
+}
+
+.description-title {
+    padding: 0;
+}
+
+.divisore {
+    width: 100%;
+    margin-top: 50px;
+}
+
 
 /*-NAV MENU-*/
 
 .menu {
-    margin-top: 2vh;
+    background-color: rgb(255, 239, 224);
+    z-index: 99;
+    margin: 0 !important;
+    width: 100%;
+    margin-top: 0;
 }
 
 .ul-menu {
-    padding: 2vh;
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 ul#menu li {
@@ -88,6 +98,26 @@ a {
 
 a:hover {
     color: rgb(136, 94, 50);
+}
+
+.first-element {
+    padding-left: 0;
+}
+
+nav {
+    height: 50px;
+    top: 3vh;
+    padding-left: 0;
+}
+
+.nav-link {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-link:hover {
+    color: rgb(155, 132, 108);
+    text-decoration: underline;
 }
 
 
@@ -107,7 +137,7 @@ a:hover {
 /*-MAPPA-*/
 
 #haritam {
-    height: 400px;
+    height: 600px;
     width: 100%;
 }
 
@@ -123,5 +153,43 @@ a:hover {
 }
 
 .gm-style-iw a {
-    color: #4272db;
+    color: #000000;
+}
+
+
+/*--SECTION FOTO--*/
+
+.section-foto {
+    top: 50px;
+}
+
+.foto-margin {
+    margin-top: 40px;
+}
+
+.titolo-foto {
+    margin: 5px;
+}
+
+.paragrafo-foto {
+    margin: 10px;
+}
+
+
+/*--FOOTER--*/
+
+.footer {
+    background-color: rgb(255, 239, 224);
+    z-index: 99;
+    width: 100%;
+}
+
+.margin-footer {
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    font-weight: 500;
 }

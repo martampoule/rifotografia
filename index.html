@@ -9,144 +9,200 @@
 
     <!--bootstrap 5.0-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
     <!--style-->
     <link rel="stylesheet" href="css/style.css">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,800;1,400&display=swap" rel="stylesheet">
-
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="css/cocoen.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.css" type="text/css" />
-
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,800;1,400&display=swap" rel="stylesheet">
     <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBfkvgO7viPOgYJw24X4INQxZ66f6gU1NE&sensor=false&extension=.js'></script>
 </head>
 
 <body>
 
     <!--MENU_________________________________________________________-->
-    <section class="menu">
+    <section class="menu border-bottom">
         <ul id="menu" class="ul-menu">
-            <li class="li-item border-right"> <a href="">HTML</a></li>
+            <li class="li-item border-right first-element"> <a href="">HTML</a></li>
             <li class="li-item border-right"><a href="">HTML</a></li>
             <li class="li-item border-right"><a href="">HTML</a></li>
             <li class="li-item border-right"><a href="">HTML</a></li>
         </ul>
     </section>
 
-    <!--HEADER_________________________________________________________-->
-    <div class="row header border-bottom">
+    <section class="margin-body">
+        <!--HEADER_________________________________________________________-->
+        <div class="row header border-bottom margin-title">
 
 
 
-        <div class="col-md-8">
-            <h1>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
-        </div>
-        <div class="col-md-4">
-            <h5 style="margin-top: 10px; font-weight: 300;">Lorem ipsum dolor sit amet, <strong style="font-weight: 700;">consectetur</strong> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
-                <strong>consectetur</strong> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </h5>
-        </div>
-
-    </div>
-
-    <!--FILTRI_________________________________________________________-->
-    <nav class="" style="position: relative;">
-
-    </nav>
-
-
-    <div id='haritam'></div>
-
-
-    <!--POST_________________________________________________________-->
-
-    <section class="d-none d-lg-block" style="position: relative;">
-        <div class="flex-grid">
-
-            <div class="col">
-                <h1>Titolo</h1>
-                <div class="cocoen">
-                    <img src="img/before.jpg" alt="">
-                    <img src="img/after.jpg" alt="">
-                </div>
+            <div class="col-md-8 description-title">
+                <h1>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
             </div>
-
-            <div class="col">
-                <h1>Titolo</h1>
-                <div class="cocoen">
-                    <img src="img/before2.jpg" alt="">
-                    <img src="img/after2.jpg" alt="">
-                </div>
-            </div>
-            <div class="col">
-                <h1>Titolo</h1>
-                <div class="cocoen">
-                    <img src="img/before.jpg" alt="">
-                    <img src="img/after.jpg" alt="">
-                </div>
-            </div>
-
-            <div class="col">
-                <h1>Titolo</h1>
-                <div class="cocoen" id="1">
-                    <img src="img/before.jpg" alt="">
-                    <img src="img/after.jpg" alt="">
-                </div>
-            </div>
-            <div class="col">
-                <h1 id="1">Titolo</h1>
-                <div class="cocoen">
-                    <img src="img/before.jpg" alt="">
-                    <img src="img/after.jpg" alt="">
-                </div>
-            </div>
-            <div class="col">
-                <h1>Titolo</h1>
-                <div class="cocoen ">
-                    <img src="img/before.jpg" alt="">
-                    <img src="img/after.jpg" alt="">
-                </div>
+            <div class="col-md-4 description-text">
+                <h5 style="margin-top: 10px; font-weight: 300;">Lorem ipsum dolor sit amet, <strong style="font-weight: 700;">consectetur</strong> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+                    <strong>consectetur</strong> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </h5>
             </div>
 
         </div>
+
+        <!--FILTRI_________________________________________________________-->
+        <div class="divisore"></div>
+
+
+        <div id='haritam' class="margin-map"></div>
+
+        <div class="border-bottom divisore"></div>
+
+        <section class="menu border-bottom">
+            <ul id="menu" class="ul-menu">
+                <li class="li-item border-right first-element"> <a href="#capitolo1">Capitolo 1</a></li>
+                <li class="li-item border-right"><a href="#capitolo2">Capitolo 2</a></li>
+                <li class="li-item border-right"><a href="#capitolo3">Capitolo 3</a></li>
+            </ul>
+        </section>
+
+
+        <!--POST_________________________________________________________-->
+
+        <section class="d-none d-lg-block section-foto" style="position: relative;">
+
+            <div style="margin-top: 10px;" id="capitolo1">
+                <h1 class="titolo-foto">Capitolo 1</h1>
+                <div class="flex-grid foto-margin">
+                    <div class="col">
+                        <h2 class="titolo-foto">Titolo</h2>
+                        <div class="cocoen">
+                            <img src="img/piazza1-b.jpg" alt="">
+                            <img src="img/piazza1-a.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <h2 class="titolo-foto">Titolo</h2>
+                        <div class="cocoen">
+                            <img src="img/before2.jpg" alt="">
+                            <img src="img/after2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h2 class="titolo-foto">Titolo</h2>
+                        <div class="cocoen">
+                            <img src="img/before.jpg" alt="">
+                            <img src="img/after.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div style="margin-top: 50px;" id="capitolo2" class="border-top">
+                <div class="divisore"></div>
+                <h1 class="titolo-foto">Capitolo 2</h1>
+                <p class="paragrafo-foto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="flex-grid foto-margin">
+                    <div class="col">
+                        <h2 class="titolo-foto">Titolo</h2>
+                        <div class="cocoen">
+                            <img src="img/piazza1-b.jpg" alt="">
+                            <img src="img/piazza1-a.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <h2 class="titolo-foto">Titolo</h2>
+                        <div class="cocoen">
+                            <img src="img/before2.jpg" alt="">
+                            <img src="img/after2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h2 class="titolo-foto">Titolo</h2>
+                        <div class="cocoen">
+                            <img src="img/before.jpg" alt="">
+                            <img src="img/after.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 50px;" id="capitolo3" class="border-top">
+                <div class="divisore"></div>
+                <h1 class="titolo-foto">Capitolo 3</h1>
+                <div class="flex-grid foto-margin">
+                    <div class="col">
+                        <h2 class="titolo-foto">Titolo</h2>
+                        <div class="cocoen">
+                            <img src="img/piazza1-b.jpg" alt="">
+                            <img src="img/piazza1-a.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <h2 class="titolo-foto">Titolo</h2>
+                        <div class="cocoen">
+                            <img src="img/before2.jpg" alt="">
+                            <img src="img/after2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h2 class="titolo-foto">Titolo</h2>
+                        <div class="cocoen">
+                            <img src="img/before.jpg" alt="">
+                            <img src="img/after.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+        <section class="d-lg-none h-body foto-margin" id="a">
+            <h1 class="titolo-foto">Titolo</h1>
+            <div class="cocoen">
+                <img src="img/before.jpg" alt="">
+                <img src="img/after.jpg" alt="">
+            </div>
+
+            <h1 class="titolo-foto">Titolo</h1>
+            <div class="cocoen">
+                <img src="img/before.jpg" alt="">
+                <img src="img/after.jpg" alt="">
+            </div>
+
+            <h1 class="titolo-foto">Titolo</h1>
+            <div class="cocoen">
+                <img src="img/before.jpg" alt="">
+                <img src="img/after.jpg" alt="">
+            </div>
+            <h1 class="titolo-foto">Titolo</h1>
+            <div class="cocoen">
+                <img src="img/before.jpg" alt="">
+                <img src="img/after.jpg" alt="">
+            </div>
+
+        </section>
+
 
     </section>
-
-
-
-
-    <section class="d-lg-none h-body" id="a">
-        <div class="cocoen">
-            <img src="img/before.jpg" alt="">
-            <img src="img/after.jpg" alt="">
+    <div class="border-bottom divisore" style="margin-top: 100px;"></div>
+    <section class="footer">
+        <div class="margin-footer">
+            Marta Cattaneo - 2020 - Rifotografia
         </div>
-
-        <div class="cocoen">
-            <img src="img/before.jpg" alt="">
-            <img src="img/after.jpg" alt="">
-        </div>
-
-        <div class="cocoen">
-            <img src="img/before.jpg" alt="">
-            <img src="img/after.jpg" alt="">
-        </div>
-        <div class="cocoen">
-            <img src="img/before.jpg" alt="">
-            <img src="img/after.jpg" alt="">
-        </div>
-
     </section>
-
-
-
 
 
     <!--FOOTER_________________________________________________________-->
-    footer
+
 
 
 
