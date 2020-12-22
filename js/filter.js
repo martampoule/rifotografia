@@ -69,6 +69,7 @@ function init() {
                 return currentlyVisible;
             };
         }());
+
         iw = new google.maps.InfoWindow();
         google.maps.event.addListener(marker, 'click', function() {
             if (infoWindowVisible()) {
