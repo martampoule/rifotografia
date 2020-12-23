@@ -3,8 +3,8 @@ var map;
 
 function init() {
     var mapOptions = {
-        center: new google.maps.LatLng(39.905643, 36.148673),
-        zoom: 5,
+        center: new google.maps.LatLng(45.739486825002004, 9.128835227261854),
+        zoom: 13,
         zoomControl: true,
         zoomControlOptions: {
             style: google.maps.ZoomControlStyle.LARGE,
@@ -24,17 +24,18 @@ function init() {
             opened: true,
         },
         mapTypeId: google.maps.MapTypeId.ROADMAP,
-        styles: [{ featureType: "administrative", stylers: [{ visibility: "off" }] }, { featureType: "poi", stylers: [{ visibility: "simplified" }] }, { featureType: "road", stylers: [{ visibility: "simplified" }] }, {
+        styles: [{ featureType: "administrative", stylers: [{ visibility: "off" }] }, { featureType: "poi", stylers: [{ visibility: "off" }] }, { featureType: "road", stylers: [{ visibility: "simplified" }] }, {
             featureType: "water",
             stylers: [{ visibility: "simplified" }]
-        }, { featureType: "transit", stylers: [{ visibility: "simplified" }] }, { featureType: "landscape", stylers: [{ visibility: "simplified" }] }, { featureType: "road.highway", stylers: [{ visibility: "off" }] }, { featureType: "road.local", stylers: [{ visibility: "on" }] }, { featureType: "road.highway", elementType: "geometry", stylers: [{ visibility: "on" }] }, { featureType: "water", stylers: [{ color: "#84afa3" }, { lightness: 52 }] }, { stylers: [{ saturation: -77 }] }, { featureType: "road" }],
+        }, { featureType: "transit", stylers: [{ visibility: "simplified" }] }, { featureType: "landscape", stylers: [{ visibility: "simplified" }] }, { featureType: "road.highway", stylers: [{ visibility: "off" }] }, { featureType: "road.local", stylers: [{ visibility: "on" }] }, { featureType: "road.highway", elementType: "geometry", stylers: [{ visibility: "on" }] }, { featureType: "water", stylers: [{ color: "#84afa3" }, { lightness: 52 }] }, { stylers: [{ saturation: -90 }] }, { featureType: "road" }],
     }
     var mapElement = document.getElementById('haritam');
     var map = new google.maps.Map(mapElement, mapOptions);
     var locations = [
-        ['Location One', 'Description', 'img/before.jpg', 'info@mydomain.com', 'www.mydomain.com', 36.85915525936127, 30.79201858795159, 'https://www.cattaneomarta.it/wp-content/uploads/2020/12/osmark.png'],
-        ['Location Two', 'Description', 'img/after.jpg', 'info@mydomain.com', 'www.mydomain.com', 37.009614, 27.257248, 'https://www.cattaneomarta.it/wp-content/uploads/2020/12/osmark.png']
+        ['Location One', 'Description', 'img/before.jpg', 'info@mydomain.com', 'www.mydomain.com', 45.739486825002004, 9.128835227261854, 'https://www.cattaneomarta.it/wp-content/uploads/2020/12/osmark.png'],
+        ['Location Two', 'Description', 'img/after.jpg', 'info@mydomain.com', 'www.mydomain.com', 45.74130635245638, 9.129993941552568, 'https://www.cattaneomarta.it/wp-content/uploads/2020/12/osmark.png']
     ];
+
     for (i = 0; i < locations.length; i++) {
         if (locations[i][1] == 'undefined') { description = ''; } else { description = locations[i][1]; }
         if (locations[i][2] == 'undefined') { image = ''; } else { image = locations[i][2]; }
@@ -91,7 +92,7 @@ function init() {
 
 
         google.maps.event.addListener(marker, 'click', function() {
-            map.setZoom(8);
+            map.setZoom(17);
             map.setCenter(marker.getPosition());
 
         });
